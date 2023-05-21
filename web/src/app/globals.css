@@ -5,4 +5,28 @@
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimoizedLegibility;
+
+  /* Hide the default scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    visibility: hidden;
+    border-radius: 5px;
+    width: 30px;
+    margin: 10px;
+}
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #5c3ea3;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #6840b3;
+  }
 }
